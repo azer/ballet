@@ -1,0 +1,6 @@
+bundle = cmd "onejs"
+
+all 'dist/uzo.js'
+
+target 'dist/uzo.js', 'lib', 'node_modules', ->
+  bundle "global.js -o dist/uzo.js"

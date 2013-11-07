@@ -1,0 +1,23 @@
+{
+  "name": "uzo",
+  "version": "0.0.0",
+  "description": "Browser client for Uzo",
+  "main": "index.js",
+  "scripts": {
+    "test": "fox -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:azer/uzo.git"
+  },
+  "keywords": [
+    "realtime",
+    "transportation",
+    "io"
+  ],
+  "author": "Azer Koculu <azer@kodfabrik.com>",
+  "license": "BSD",
+  "dependencies": {
+    "pubsub": "0.0.5"
+  }
+}

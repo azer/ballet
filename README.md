@@ -5,7 +5,7 @@ Real-time Transport Library for Golang. It's under development right now.
 In Server:
 
 ```go
-import "github.com/azer/uzo"
+import "github.com/ballet/ballet"
 
 http.ListenAndServe("0.0.0.0:4000", uzo.OnOpen(server, func (io uzo.IO) {
   io.Pub("{ \"foo\": 123 }")
@@ -19,7 +19,7 @@ http.ListenAndServe("0.0.0.0:4000", uzo.OnOpen(server, func (io uzo.IO) {
 In Browser:
 
 ```js
-io = require('uzo')(':4000')
+io = require('ballet')(':4000')
 
 io.sub(function (message) {
   console.log('< message', message)

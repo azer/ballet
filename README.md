@@ -7,10 +7,10 @@ In Server:
 ```go
 import "github.com/ballet/ballet"
 
-http.ListenAndServe("0.0.0.0:4000", uzo.OnOpen(server, func (io uzo.IO) {
+http.ListenAndServe("0.0.0.0:4000", ballet.OnOpen(server, func (io uzo.IO) {
   io.Pub("{ \"foo\": 123 }")
 
-  io.Sub(func (msg *uzo.Message) {
+  io.Sub(func (msg *ballet.Message) {
     fmt.Printf("New message: %s @ %s \n", msg.Content, msg.Ts)
   })
 }))

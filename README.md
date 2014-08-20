@@ -19,7 +19,7 @@ http.ListenAndServe("0.0.0.0:4000", uzo.OnOpen(server, func (io uzo.IO) {
 In Browser:
 
 ```js
-io = require('ballet')(':4000')
+var io = require('ballet')(':4000')
 
 io.sub(function (message) {
   console.log('< message', message)
